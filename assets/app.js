@@ -7,5 +7,6 @@ import './bootstrap.js';
  */
 import './styles/app.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+// import './js/main.js'
+// aos bootstrap bootstrap-icon php-email-form swiper
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
