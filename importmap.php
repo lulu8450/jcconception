@@ -35,4 +35,25 @@ return [
         'version' => '5.3.3',
         'type' => 'css',
     ],
+    'bootstrap/dist/js/bootstrap.bundle.min.js' => [
+        'version' => '5.3.3',
+    ],
+    'bootstrap-icons/font/bootstrap-icons.css' => [
+        'version' => '1.11.3',
+        'type' => 'css',
+    ],
+    'aos/dist/aos.css' => [
+        'version' => '2.3.4',
+        'type' => 'css',
+    ],
+    'aos/dist/aos.js' => [
+        'version' => '2.3.4',
+    ],
+    'swiper/swiper-bundle.min.css' => [
+        'version' => '11.1.1',
+        'type' => 'css',
+    ],
+    'swiper/swiper-bundle.min.js' => [
+        'version' => '11.1.1',
+    ],
 ];
