@@ -56,4 +56,7 @@ return [
     'swiper/swiper-bundle.min.js' => [
         'version' => '11.1.1',
     ],
+    'swiper/swiper-bundle.js' => [
+        'version' => '11.1.1',
+    ],
 ];

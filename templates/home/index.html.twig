@@ -11,7 +11,7 @@
 <section id="hero" class="clearfix">
     <div class="container" data-aos="fade-up">
         <div class="hero-img" data-aos="zoom-out" data-aos-delay="200">
-            <img src="assets/img/hero-img.svg" alt="" class="img-fluid">
+            <img src="{{ asset('img/hero-img.svg')}}" alt="hero-img" class="img-fluid">
         </div>
         <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
             <h2>Nous proposons<br><span>des solutions adaptées</span><br>à vos besoins!</h2>
@@ -48,11 +48,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6 background order-lg-2" data-aos="zoom-in">
-                    <img src="assets/img/about-img.svg" class="img-fluid" alt="">
+                    <img src="{{ asset('img/about-img.svg') }}" class="img-fluid" alt="">
                 </div>
                 <div class="row about-extra">
                     <div class="col-lg-6" data-aos="fade-right">
-                        <img src="assets/img/about-extra-1.svg" class="img-fluid" alt="">
+                        <img src="{{ asset('img/about-extra-1.svg') }}" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 pt-5 pt-lg-0" data-aos="fade-left">
                         <h4>JC Conception </h4>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="row about-extra">
                     <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-                        <img src="assets/img/about-extra-2.svg" class="img-fluid" alt="">
+                        <img src="{{ asset('img/about-extra-2.svg') }}" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right">
                         <h4>Notre savoir faire</h4>
@@ -87,7 +87,6 @@
                 <h3>Solutions</h3>
                 <p>Nous offrons différentes solutions selon vos besoins</p>
             </header>
-
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-5" data-aos="zoom-in" data-aos-delay="100">
                     <div class="box">
@@ -207,7 +206,7 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="testimonial-item">
-                                    <img src="assets/img/Icone-personne.png" class="testimonial-img" alt="">
+                                    <img src="{{ asset('img/Icone-personne.png') }}" class="testimonial-img" alt="">
                                     <h3>Alisha-hennart</h3>
                                     <h4>Entrepeneuse</h4>
                                     <p> Je te remercie beaucoup pour la création de mon site web. Travail de qualité. À l'écoute . Je recommande à 100%. </p>
@@ -384,10 +383,10 @@
                         <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-recaptcha-site-key="6LcYJ3saAAAAADGeNOTItYrbpHRbTOGVy8-vfEKV">
                             <div class="row">
                                 <div class="form-group col-lg-6">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" required>
+                                    <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" autocomplete="given-name"required>
                                 </div>
                                 <div class="form-group col-lg-6 mt-3 mt-lg-0">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" required>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" autocomplete="off" required>
                                 </div>
                             </div>
                             <div class="form-group mt-3">

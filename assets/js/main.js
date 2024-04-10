@@ -1,4 +1,6 @@
-
+import Swiper from 'swiper/swiper-bundle.js';
+// import Swiper styles
+import 'swiper/swiper-bundle.min.css';
 /**
 * Template Name: NewBiz - v4.0.1
 * Template URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
