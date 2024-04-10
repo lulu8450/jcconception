@@ -2,8 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title>{% block title %}{% endblock %}</title>
+
+        <!-- Favicons -->
+        <link href="{{ asset('images/mixlogo.png') }}" rel="icon">
+        <link href="{{ asset('images/mixlogo.png') }}" rel="apple-touch-icon">
+
         {% block stylesheets %}
         {% endblock %}
 
@@ -12,6 +18,26 @@
         {% endblock %}
     </head>
     <body>
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top d-flex align-items-center">
+            <div class="container d-flex justify-content-between">
+
+            <div class="logo">
+                <a href="{{ path('app_home') }}"><img src="{{ asset('images/mixlogo.png') }}" alt="" class="img-fluid"> JC Conception</a>
+            </div>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+                    <li><a class="nav-link scrollto" href="#about">A propos</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+            </div>
+        </header><!-- #header -->
         {% block body %}{% endblock %}
     </body>
 </html>
