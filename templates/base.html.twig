@@ -18,26 +18,24 @@
         {% endblock %}
     </head>
     <body>
-        <!-- ======= Header ======= -->
-        <header id="header" class="fixed-top d-flex align-items-center">
-            <div class="container d-flex justify-content-between">
-
-            <div class="logo">
-                <a href="{{ path('app_home') }}"><img src="{{ asset('img/mixlogo.png') }}" alt="" class="img-fluid"> JC Conception</a>
-            </div>
-
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
-                    <li><a class="nav-link scrollto" href="#about">A propos</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-
-            </div>
-        </header>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+        <div class="container d-flex justify-content-between">
+        <div class="logo">
+            <a href="{{ path('app_home') }}"><img src="{{ asset('img/mixlogo.png') }}" alt="" class="img-fluid"> JC Conception</a>
+        </div>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+                <li><a class="nav-link scrollto" href="#about">A propos</a></li>
+                <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        </div>
+    </header>
+    <!-- End Header -->
         {% block body %}{% endblock %}
     </body>
 </html>
