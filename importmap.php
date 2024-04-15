@@ -42,21 +42,4 @@ return [
         'version' => '1.11.3',
         'type' => 'css',
     ],
-    'aos/dist/aos.css' => [
-        'version' => '2.3.4',
-        'type' => 'css',
-    ],
-    'aos/dist/aos.js' => [
-        'version' => '2.3.4',
-    ],
-    'swiper/swiper-bundle.min.css' => [
-        'version' => '11.1.1',
-        'type' => 'css',
-    ],
-    'swiper/swiper-bundle.min.js' => [
-        'version' => '11.1.1',
-    ],
-    'swiper/swiper-bundle.js' => [
-        'version' => '11.1.1',
-    ],
 ];

@@ -509,32 +509,7 @@
 
     <!--Script js and init for aos to work-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script> 
-        AOS.init({
-            duration: 1000,
-            easing: 'ease-in-out',
-            once: true,
-            mirror: false
-        })
-    </script>
-    <!--Script js for swiper to work-->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-        {# Testimonials slider #}
-        const swiper = new Swiper('.testimonials-slider', {
-            speed: 600,
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false
-            },
-            slidesPerView: 'auto',
-            pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
-                clickable: true
-            }
-        });
-    </script>
+
 {% endblock %}

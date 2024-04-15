@@ -1,6 +1,4 @@
-import Swiper from 'swiper/swiper-bundle.js';
-// import Swiper styles
-import 'swiper/swiper-bundle.min.css';
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs' 
 /**
 * Template Name: NewBiz - v4.0.1
 * Template URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
@@ -161,23 +159,20 @@ import 'swiper/swiper-bundle.min.css';
     }
   });
 
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
+    const swiper = new Swiper('.testimonials-slider', {
+      speed: 600,
     loop: true,
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false
-    },
+    disableOnInteraction: false
+            },
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+    type: 'bullets',
+    clickable: true
+            }
+        });
 
   /**
    * Animation on scroll

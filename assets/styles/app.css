@@ -329,6 +329,28 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Register and Login Section
+--------------------------------------------------------------*/
+#register, #login{
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    padding: 100px 0 120px 0;
+}
+
+@media (max-width: 991px) {
+    #register, #login {
+        padding: 50px 0 60px 0;
+    }
+}
+
+@media (max-width: 574px) {
+    #register, #login {
+        padding: 25px 0 20px 0;
+    }
+}
+
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
