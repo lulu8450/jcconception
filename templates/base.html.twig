@@ -21,30 +21,29 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
         <div class="container d-flex justify-content-between">
-        <div class="logo">
-            <a href="{{ path('app_home') }}"><img src="{{ asset('img/mixlogo.png') }}" alt="" class="img-fluid"> JC Conception</a>
-        </div>
-        <nav id="navbar" class="navbar">
-            <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
-                <li><a class="nav-link scrollto" href="#about">A propos</a></li>
-                <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-            </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-            <div class="d-lg-flex col-lg-3 justify-content-lg-end">
-                {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            <div class="logo">
+                <a href="{{ path('app_home') }}"><img src="{{ asset('img/mixlogo.png') }}" alt="" class="img-fluid"> JC Conception</a>
+            </div>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+                    <li><a class="nav-link scrollto" href="#about">A propos</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                    <li class="text-center text-black">{{ app.user.userIdentifier }}<a class="nav-link btn btn-danger" href="{{ path('app_logout') }}">Se déconnecter</a></li>
                     
-                    <div class="mb-3 text-center text-white">
-                        <h3>{{ app.user.userIdentifier }}</h3>
-                            <a href="{{ path('app_logout') }}" class="btn btn-danger">Se déconnecter</a>
-                    </div>
-                {% else %}
-                    <a href="/register" class="btn btn-success">S'enregistrer</a>
-                    <a href="/login" class="btn btn-primary">Se connecter</a>
-                {% endif %}
-			</div>
-        </nav>
+                    {% if is_granted('ROLE_ADMIN') %}
+                    <li><a class="nav-link btn btn-success" href="{{ path('app_users_index') }}">Users List</a></li>
+                    {% endif %}
+
+                    {% else %}
+                    <li><a class="nav-link btn btn-success" href="{{ path('app_register') }}">S'enregistrer</a></li>
+                    <li><a class="nav-link btn btn-primary" href="{{ path('app_login') }}">Se connecter</a></li>
+                    {% endif %}
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
         </div>
     </header>
     <!-- End Header -->

@@ -7,16 +7,26 @@ Modifier le .env pour la bdd
 
 Et exécutez les commandes suivantes :
 
-## Creer la BDD
-php bin/console doctrine:database:create
+    composer install 
+    composer prepare
+    symfony console d:m:m
 
-symfony console d:m:m
-
-composer install
-
+    <!-- Used to populate the database with initial data. -->
+    symfony console doctrine:fixture:load
 
 Et lancer le serveur avec :
 
 symfony server:start
 
 Rendez vous sur http://localhost:8000 pour accéder au projet.
+
+## Testez
+Pour pouvoir tester le projet, vous possédez deux utilisateurs :
+
+Un utilisateur administration : 
+Username : admin
+Mot de passe : adminadmin
+
+Et un utilisateur normal :
+Username : test
+Mot de passe : testtest

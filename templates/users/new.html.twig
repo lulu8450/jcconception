@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nouvelles Blagues{% endblock %}
+
+{% block stylesheets %}
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+	<div class="jumbotron text-center">
+        <h1  class="display-4">Ajouter une nouvelle Blagues</h1>
+            {{ include('blagues/_form.html.twig') }}
+            <a href="{{ path('app_blagues_index') }}">back to list</a>
+	</div>
+</div>
+
+<script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+{% endblock %}
